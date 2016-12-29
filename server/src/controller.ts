@@ -3,6 +3,7 @@ import { PlaymusicService } from './service';
 import { Player } from './player';
 import * as express from 'express';
 import logger from './logger';
+import { SocketConnection } from './socket-connection';
 
 
 export class Controller {
@@ -10,7 +11,7 @@ export class Controller {
     private playmusicService = new PlaymusicService();
     private player = new Player();
 
-    constructor() {
+    constructor(private socketConnection: SocketConnection) {
         this.player.onEnd(() => {
             this.checkPlayer();
         });
@@ -92,6 +93,8 @@ export class Controller {
             let nextSong = state.votelist.shift();
             nextSong.played = new Date();
             state.playlist.unshift(nextSong);
+            this.socketConnection.broadcast('votelist', state.votelist);
+            this.socketConnection.broadcast('playlist', state.playlist);
             this.player.play(__dirname + `/../songs/${nextSong.nid}.mp3`);
         }
     }

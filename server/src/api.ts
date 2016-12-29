@@ -9,7 +9,7 @@ export class Api {
     private controller: Controller;
 
     constructor(private socketConnection: SocketConnection) {
-        this.controller = new Controller();
+        this.controller = new Controller(socketConnection);
     }
 
     init() {
