@@ -1,0 +1,34 @@
+<div class="row header">
+  <div class="col-sm-3">
+    <div class="playlist-link">
+      <a routerLink="/playlist"><i class="fa fa-list playlist-link-button"></i></a>
+    </div>
+  </div>
+  <div class="col-sm-6 title">Musicbox</div>
+  <div class="col-sm-3">
+    <div class="add-song">
+      <a routerLink="/search"><i class="fa fa-plus add-song-button"></i></a>
+    </div>
+  </div>
+</div>
+<div class="row playlist">
+  <div class="col-md-6 song" *ngFor="let song of songs">
+    <div class="col-sm-1 vote-container">
+      <div>
+        <i [ngClass]="{'active-button' : userVotes[song.nid] && userVotes[song.nid] === 1 }" class="fa fa-arrow-up vote-button" (click)="vote(song, 1)" aria-hidden="true"></i>
+      </div>
+      <div class="vote-count">
+        {{song.votes || 0}}
+      </div>
+      <div>
+        <i [ngClass]="{'active-button' : userVotes[song.nid] && userVotes[song.nid] === -1 }" class="fa fa-arrow-down vote-button" (click)="vote(song, -1)" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="col-sm-11">
+      <song-item [song]="song" [cached]="true"></song-item>
+    </div> 
+  </div>
+  <div *ngIf="!songs || songs.length === 0">
+    no song is in the queue. add one!
+  </div>
+</div>

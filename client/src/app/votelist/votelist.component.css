@@ -1,0 +1,69 @@
+.header {
+    text-align: center;
+    height: 50px;
+    background-color: #ff5722;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.playlist {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.song {
+    height: 60px;
+    margin-top: 10px;
+}
+
+.vote-container {
+    height: 50px;
+}
+
+.vote-count {
+    font-size: 16px;
+}
+
+.vote-button {
+    font-size: 21px;
+}
+
+.active-button {
+    color: #ff5722; 
+}
+
+.vote-button:hover {
+    cursor: pointer;
+}
+
+.song-meta {
+    margin-left: 10px;
+}
+
+.add-song {
+    float: right;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.add-song-button {
+    color: white;
+}
+
+.playlist-link {
+    float: left;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.playlist-link-button {
+    color: white;
+}

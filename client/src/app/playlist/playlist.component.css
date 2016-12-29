@@ -1,0 +1,49 @@
+.header {
+    text-align: center;
+    height: 50px;
+    background-color: #ff5722;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.playlist {
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.song {
+    height: 60px;
+    margin-top: 10px;
+}
+
+.song-meta {
+    margin-left: 10px;
+}
+
+.add-song {
+    float: right;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.add-song-button {
+    color: white;
+}
+
+.back-link {
+    float: left;
+    font-size: 25px;
+    margin-top: 2px;
+}
+
+.back-link-button {
+    color: white;
+}

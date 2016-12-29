@@ -1,0 +1,348 @@
+[
+    {
+        "kind": "sj#track",
+        "title": "Things We Lost In The Fire",
+        "artist": "Bastille",
+        "composer": "",
+        "album": "All This Bad Blood",
+        "albumArtist": "Bastille",
+        "year": 2013,
+        "trackNumber": 2,
+        "genre": "Alternative/Indie",
+        "durationMillis": "240000",
+        "albumArtRef": [
+            {
+                "url": "http://lh3.googleusercontent.com/CigZaBKHrgfysMcjfKjy2-CYHtAVIM1XjWHP3amWO29E2CVsQHNoW06Mh1KPJU9fR1xs5wL1rQ"
+            }
+        ],
+        "discNumber": 1,
+        "estimatedSize": "9632941",
+        "trackType": "7",
+        "storeId": "Tcgygb5erihqipy2axvhw5g67um",
+        "albumId": "By4drtqryhq2pznsb7mh7ttvai4",
+        "artistId": [
+            "A7wx5b7hmzte3vfoqn7pz2rd4kq"
+        ],
+        "nid": "Tcgygb5erihqipy2axvhw5g67um",
+        "trackAvailableForSubscription": true,
+        "trackAvailableForPurchase": true,
+        "albumAvailableForPurchase": true,
+        "contentType": "2",
+        "primaryVideo": {
+            "kind": "sj#video",
+            "id": "MGR4U7W1dZU",
+            "thumbnails": [
+                {
+                    "url": "https://i.ytimg.com/vi/MGR4U7W1dZU/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                }
+            ]
+        }
+    },
+    {
+        "kind": "sj#track",
+        "title": "Things We Lost In The Fire",
+        "artist": "Bastille",
+        "composer": "",
+        "album": "Things We Lost In The Fire",
+        "albumArtist": "Bastille",
+        "year": 2013,
+        "trackNumber": 1,
+        "genre": "Alternative/Indie",
+        "durationMillis": "240000",
+        "albumArtRef": [
+            {
+                "url": "http://lh3.googleusercontent.com/axCUhhAdCx-QrNlvXjYuVeCGPZzt0aHRIBCRtUJ67SUcZ4ScJZeEfqd2W3UZVFyUgMZTYA13-Q"
+            }
+        ],
+        "discNumber": 1,
+        "estimatedSize": "9632941",
+        "trackType": "7",
+        "storeId": "Ts4aoy5rojxucu6g52luf4ziqeq",
+        "albumId": "Bblrvmtjhuxhuq7vfyw2oiqbnam",
+        "artistId": [
+            "A7wx5b7hmzte3vfoqn7pz2rd4kq"
+        ],
+        "nid": "Ts4aoy5rojxucu6g52luf4ziqeq",
+        "trackAvailableForSubscription": true,
+        "trackAvailableForPurchase": true,
+        "albumAvailableForPurchase": true,
+        "contentType": "2",
+        "primaryVideo": {
+            "kind": "sj#video",
+            "id": "MGR4U7W1dZU",
+            "thumbnails": [
+                {
+                    "url": "https://i.ytimg.com/vi/MGR4U7W1dZU/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                }
+            ]
+        }
+    },
+    {
+        "kind": "sj#track",
+        "title": "Things We Lost in the Fire",
+        "artist": "Bastille",
+        "composer": "Dan Smith",
+        "album": "Bad Blood",
+        "albumArtist": "Bastille",
+        "year": 2013,
+        "trackNumber": 2,
+        "genre": "Alternative/Indie",
+        "durationMillis": "240000",
+        "albumArtRef": [
+            {
+                "url": "http://lh3.ggpht.com/oI16aWCFW2Db6DJeO1RrQJNg5fbWb9ZNaIELMwho4U6auBn8TR3zn6aNnKwfJ-qAEFFMA_UW0A"
+            }
+        ],
+        "discNumber": 1,
+        "estimatedSize": "9633067",
+        "trackType": "7",
+        "storeId": "Tgmgbi6n5fop4vqpx43rktmhseq",
+        "albumId": "Bz2lab7i3yyoqwc5twzybd2hzzy",
+        "artistId": [
+            "A7wx5b7hmzte3vfoqn7pz2rd4kq",
+            "Aqdh63obcnneiw6dsyxhf7blyam",
+            "Awc6lwncuejaupokhpe7mwtedzi",
+            "Aeunlt4byhsoessqb5l2rvkffjm",
+            "Akrgrqzjwvflq3xq3tek2qmxr5a",
+            "Abgbwreczhpuoxrkqu4q4g7zehq",
+            "Azu2xkdmjvo7p6q7kieevjkrcnu",
+            "Anvbzramiqkn2mvrolqh2gn6poq",
+            "Avxyqjwbbllfyrded5su3y7jsiu",
+            "A5ceij545vbeqsyeauns2corcv4",
+            "A75lladhucnsy2r2sn6ckybn5cu"
+        ],
+        "nid": "Tgmgbi6n5fop4vqpx43rktmhseq",
+        "trackAvailableForSubscription": true,
+        "trackAvailableForPurchase": true,
+        "albumAvailableForPurchase": true,
+        "contentType": "2",
+        "primaryVideo": {
+            "kind": "sj#video",
+            "id": "MGR4U7W1dZU",
+            "thumbnails": [
+                {
+                    "url": "https://i.ytimg.com/vi/MGR4U7W1dZU/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                }
+            ]
+        }
+    },
+    {
+        "kind": "sj#track",
+        "title": "Things We Lost In The Fire (beGun Remix)",
+        "artist": "Bastille",
+        "composer": "",
+        "album": "Things We Lost In The Fire",
+        "albumArtist": "Bastille",
+        "year": 2013,
+        "trackNumber": 5,
+        "genre": "Alternative/Indie",
+        "durationMillis": "337000",
+        "albumArtRef": [
+            {
+                "url": "http://lh3.googleusercontent.com/axCUhhAdCx-QrNlvXjYuVeCGPZzt0aHRIBCRtUJ67SUcZ4ScJZeEfqd2W3UZVFyUgMZTYA13-Q"
+            }
+        ],
+        "discNumber": 1,
+        "estimatedSize": "13509512",
+        "trackType": "7",
+        "storeId": "Tl2mm42wcufunjvcjj6gnbbw6ue",
+        "albumId": "Bblrvmtjhuxhuq7vfyw2oiqbnam",
+        "artistId": [
+            "A7wx5b7hmzte3vfoqn7pz2rd4kq",
+            "Avahdwj2yccz6bfsonaymgkwohe"
+        ],
+        "nid": "Tl2mm42wcufunjvcjj6gnbbw6ue",
+        "trackAvailableForSubscription": true,
+        "trackAvailableForPurchase": true,
+        "albumAvailableForPurchase": true,
+        "contentType": "2"
+    },
+    {
+        "kind": "sj#track",
+        "title": "Things We Lost In The Fire (Tyde Remix)",
+        "artist": "Bastille",
+        "composer": "",
+        "album": "Things We Lost In The Fire",
+        "albumArtist": "Bastille",
+        "year": 2013,
+        "trackNumber": 4,
+        "genre": "Alternative/Indie",
+        "durationMillis": "290000",
+        "albumArtRef": [
+            {
+                "url": "http://lh3.googleusercontent.com/axCUhhAdCx-QrNlvXjYuVeCGPZzt0aHRIBCRtUJ67SUcZ4ScJZeEfqd2W3UZVFyUgMZTYA13-Q"
+            }
+        ],
+        "discNumber": 1,
+        "estimatedSize": "11636010",
+        "trackType": "7",
+        "storeId": "T7vqyemh7epiqj3gnpo5pnu32lm",
+        "albumId": "Bblrvmtjhuxhuq7vfyw2oiqbnam",
+        "artistId": [
+            "A7wx5b7hmzte3vfoqn7pz2rd4kq",
+            "Aof7m5gve7sch5alrdymn5aucfm"
+        ],
+        "nid": "T7vqyemh7epiqj3gnpo5pnu32lm",
+        "trackAvailableForSubscription": true,
+        "trackAvailableForPurchase": true,
+        "albumAvailableForPurchase": true,
+        "contentType": "2"
+    },
+    {
+        "kind": "sj#track",
+        "title": "Things We Lost In The Fire (TORN Remix)",
+        "artist": "Bastille",
+        "composer": "",
+        "album": "Things We Lost In The Fire",
+        "albumArtist": "Bastille",
+        "year": 2013,
+        "trackNumber": 3,
+        "genre": "Alternative/Indie",
+        "durationMillis": "323000",
+        "albumArtRef": [
+            {
+                "url": "http://lh3.googleusercontent.com/axCUhhAdCx-QrNlvXjYuVeCGPZzt0aHRIBCRtUJ67SUcZ4ScJZeEfqd2W3UZVFyUgMZTYA13-Q"
+            }
+        ],
+        "discNumber": 1,
+        "estimatedSize": "12955716",
+        "trackType": "7",
+        "storeId": "T3ingtepdqyaakal55xcfn2lh5q",
+        "albumId": "Bblrvmtjhuxhuq7vfyw2oiqbnam",
+        "artistId": [
+            "A7wx5b7hmzte3vfoqn7pz2rd4kq",
+            "Amqour24tazd7skhjh62ao6ef5e"
+        ],
+        "nid": "T3ingtepdqyaakal55xcfn2lh5q",
+        "trackAvailableForSubscription": true,
+        "trackAvailableForPurchase": true,
+        "albumAvailableForPurchase": true,
+        "contentType": "2"
+    },
+    {
+        "kind": "sj#track",
+        "title": "Lost In The Fire",
+        "artist": "James LaBrie",
+        "composer": "",
+        "album": "Impermanent Resonance",
+        "albumArtist": "James LaBrie",
+        "year": 2013,
+        "trackNumber": 7,
+        "genre": "Pop",
+        "durationMillis": "232000",
+        "albumArtRef": [
+            {
+                "url": "http://lh3.googleusercontent.com/NdWQs1VUDWceBxjcFCv6eR3ARrrSKW_JfpVNs59u92WDMeCTOpZHOoyUFhu5ZrrNgnd3Fa6f"
+            }
+        ],
+        "discNumber": 1,
+        "estimatedSize": "9317382",
+        "trackType": "7",
+        "storeId": "Tq6htp5o7idzoxyi4pbda5nhnai",
+        "albumId": "Bl5yc5ssiig3emdw4atr7ch3i4u",
+        "artistId": [
+            "Aflzkh3l4mklkzln3ln3tqe7c2e"
+        ],
+        "nid": "Tq6htp5o7idzoxyi4pbda5nhnai",
+        "trackAvailableForSubscription": true,
+        "trackAvailableForPurchase": true,
+        "albumAvailableForPurchase": true,
+        "contentType": "2"
+    },
+    {
+        "kind": "sj#track",
+        "title": "Top of the World",
+        "artist": "Greek Fire",
+        "composer": "",
+        "album": "Lost",
+        "albumArtist": "Greek Fire",
+        "year": 2014,
+        "trackNumber": 2,
+        "genre": "Alternative/Indie",
+        "durationMillis": "266000",
+        "albumArtRef": [
+            {
+                "url": "http://lh6.ggpht.com/lsV8yIZB-rc-7XLKzd0yyroZ-xdhGuZ8r3w3wbRYeKLZy9S67nS1whnKKue_cAljTCP1HUbU2YI"
+            }
+        ],
+        "discNumber": 1,
+        "estimatedSize": "10649627",
+        "trackType": "7",
+        "storeId": "Tsjhxczzkvlmd7za52fk5r63mia",
+        "albumId": "Bcsltdamv3toivlucjl5atcdzwm",
+        "artistId": [
+            "A6afkdmeonyddx4vyghzhge2o3a"
+        ],
+        "nid": "Tsjhxczzkvlmd7za52fk5r63mia",
+        "trackAvailableForSubscription": true,
+        "trackAvailableForPurchase": true,
+        "albumAvailableForPurchase": true,
+        "contentType": "1"
+    },
+    {
+        "kind": "sj#track",
+        "title": "Lost in the Machine",
+        "artist": "Yngwie J Malmsteen",
+        "composer": "",
+        "album": "World on Fire",
+        "albumArtist": "Yngwie Malmsteen",
+        "year": 2016,
+        "trackNumber": 5,
+        "genre": "Metal",
+        "durationMillis": "315000",
+        "albumArtRef": [
+            {
+                "url": "http://lh3.googleusercontent.com/ogfzwZm5sHeRT53gGyqlUIApLoUtiIdpKveqndk3d1M51b3aGZhttwg7BtJDRtsa9TAg-Q3u8Q"
+            }
+        ],
+        "discNumber": 1,
+        "estimatedSize": "12640157",
+        "trackType": "7",
+        "storeId": "Tj6hnui3l757freo4hoyajdnt2i",
+        "albumId": "Brideb6liaqk7r4dvfygdj3yj3m",
+        "artistId": [
+            "Ayv4ub34rppoori3s5nqsoll3o4"
+        ],
+        "nid": "Tj6hnui3l757freo4hoyajdnt2i",
+        "trackAvailableForSubscription": true,
+        "trackAvailableForPurchase": true,
+        "albumAvailableForPurchase": true,
+        "contentType": "2"
+    },
+    {
+        "kind": "sj#track",
+        "title": "Lost in Thoughts All Alone (Fire Emblem Fates)",
+        "artist": "AmaLee",
+        "composer": "",
+        "album": "Lost in Thoughts All Alone (Fire Emblem Fates)",
+        "albumArtist": "AmaLee",
+        "year": 2016,
+        "trackNumber": 1,
+        "genre": "Alternative/Indie",
+        "durationMillis": "396000",
+        "albumArtRef": [
+            {
+                "url": "http://lh3.googleusercontent.com/Y7_REQJpt2P48uRzOae5DbVFTpUM7X366GK2JqAqsLkWCXt_NCUfDtH2St5uiW45RjEdgTKk"
+            }
+        ],
+        "discNumber": 1,
+        "estimatedSize": "15842770",
+        "trackType": "7",
+        "storeId": "Twwsagkkb6jpsiwzptyrfyynapu",
+        "albumId": "Bcnddd5egunjevo3o5g276ys6wu",
+        "artistId": [
+            "Ayhkee7bdu3d35wt2f6ker6ynem"
+        ],
+        "nid": "Twwsagkkb6jpsiwzptyrfyynapu",
+        "trackAvailableForSubscription": true,
+        "trackAvailableForPurchase": true,
+        "albumAvailableForPurchase": true,
+        "contentType": "2"
+    }
+]

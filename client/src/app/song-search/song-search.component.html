@@ -1,0 +1,26 @@
+<div class="row header">
+  <div class="col-sm-1">
+    <div class="back-link">
+      <a routerLink="/"><i class="fa fa-arrow-left back-link-button"></i></a>
+    </div>
+  </div>
+  <div class="col-sm-11">
+    <input placeholder="title, artist, ..." name="query" (keyup)="onSubmit($event)" [(ngModel)]="query" type="text" class="search-text">
+  </div>
+</div>
+<div class="results">
+  <div class="row" *ngFor="let song of results">
+
+    <div class="col-sm-2 add-button">
+      <i *ngIf="!song.added" (click)="addSong(song)" class="fa fa-plus"></i>
+      <i *ngIf="song.added" class="fa fa-plus active"></i>
+    </div>
+    <div class="col-sm-10">
+      <song-item [song]="song"></song-item>
+    </div>
+
+  </div>
+
+  <div *ngIf="loaded && results.length === 0">no result found for: {{query}}</div>
+
+</div>

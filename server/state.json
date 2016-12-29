@@ -1,0 +1,242 @@
+{
+    "votelist": [
+        {
+            "kind": "sj#track",
+            "title": "Runaway",
+            "artist": "Avril Lavigne",
+            "composer": "",
+            "album": "The Best Damn Thing",
+            "albumArtist": "Avril Lavigne",
+            "year": 2007,
+            "trackNumber": 3,
+            "genre": "Pop",
+            "durationMillis": "227000",
+            "albumArtRef": [
+                {
+                    "url": "http://lh6.ggpht.com/AZVEwIYTlw257WO9y-Zx_BYiGqCfhgEgH4OH5YE9TWGFn9i3vfHJG50CF_XqATYTLG9h6mQr4g"
+                }
+            ],
+            "discNumber": 1,
+            "estimatedSize": "9119896",
+            "trackType": "7",
+            "storeId": "Tlgqaxz5vq2shkuer6zk4hjixcm",
+            "albumId": "Bs4qdmqyzcmiq5kmcgeamyom6c4",
+            "artistId": [
+                "Aqhrmfcyuwigtwszjc5diz6wcui"
+            ],
+            "nid": "Tlgqaxz5vq2shkuer6zk4hjixcm",
+            "trackAvailableForSubscription": true,
+            "trackAvailableForPurchase": true,
+            "albumAvailableForPurchase": true,
+            "contentType": "1",
+            "added": true,
+            "votes": 1
+        },
+        {
+            "kind": "sj#track",
+            "title": "Stronger",
+            "artist": "Kanye West",
+            "composer": "Kanye West",
+            "album": "Stronger (Int'l 2 trk)",
+            "albumArtist": "Kanye West",
+            "year": 2007,
+            "trackNumber": 1,
+            "genre": "Hip-Hop/Rap",
+            "durationMillis": "312000",
+            "albumArtRef": [
+                {
+                    "url": "http://lh3.googleusercontent.com/R6ts0H3mcbEU5VRGI6HjTQCX3Czyhbf96ygAPcss_v-dRCEcq0ubYVUe1QtAirvucQm6uUyfJg"
+                }
+            ],
+            "discNumber": 1,
+            "estimatedSize": "12498051",
+            "trackType": "7",
+            "storeId": "Tu2pq6oan6w4kxgfdtkoi7qhvce",
+            "albumId": "B7bsrgetblwvgswjbn6mj4xoiz4",
+            "artistId": [
+                "A3bn3euz42saceyegr7defldcze"
+            ],
+            "nid": "Tu2pq6oan6w4kxgfdtkoi7qhvce",
+            "trackAvailableForSubscription": true,
+            "trackAvailableForPurchase": true,
+            "albumAvailableForPurchase": true,
+            "contentType": "1",
+            "primaryVideo": {
+                "kind": "sj#video",
+                "id": "PsO6ZnUZI0g",
+                "thumbnails": [
+                    {
+                        "url": "https://i.ytimg.com/vi/PsO6ZnUZI0g/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    }
+                ]
+            },
+            "added": true,
+            "votes": 1
+        },
+        {
+            "kind": "sj#track",
+            "title": "Runaway",
+            "artist": "Del Shannon",
+            "composer": "Del Shannon",
+            "album": "Decorated for Christmas",
+            "albumArtist": "Del Shannon",
+            "year": 2016,
+            "trackNumber": 10,
+            "genre": "Pop",
+            "durationMillis": "136000",
+            "albumArtRef": [
+                {
+                    "url": "http://lh3.googleusercontent.com/Q7FhGN1kNepbOPPBpqVBKzHv8n1dKtw3zkptFq37-2v0erxL_qz_fzmzEyK1gj79sV7i9OPq9w"
+                }
+            ],
+            "discNumber": 1,
+            "estimatedSize": "5446035",
+            "trackType": "7",
+            "storeId": "Tbjef4bxlyl2qwdhvsljfsy3bfq",
+            "albumId": "Bnkdwjo2jpxu5sstdd3oqxnzgc4",
+            "artistId": [
+                "Apb3khtqza2ozgkqhndw2q2sjty"
+            ],
+            "nid": "Tbjef4bxlyl2qwdhvsljfsy3bfq",
+            "trackAvailableForSubscription": true,
+            "trackAvailableForPurchase": true,
+            "albumAvailableForPurchase": true,
+            "contentType": "2",
+            "added": true,
+            "votes": 0
+        },
+        {
+            "kind": "sj#track",
+            "title": "Runaway",
+            "artist": "Ed Sheeran",
+            "composer": "",
+            "album": "x (Deluxe Edition)",
+            "albumArtist": "Ed Sheeran",
+            "year": 2014,
+            "trackNumber": 9,
+            "genre": "Pop",
+            "durationMillis": "205000",
+            "albumArtRef": [
+                {
+                    "url": "http://lh3.ggpht.com/6Qvt4TfAWLDc3dYjMDMd-ZPR_xfxzvCntY4W0dUTAoVVLfrKTwiv9zbs8QJXsdTcuFT0_vmK2g"
+                }
+            ],
+            "discNumber": 1,
+            "estimatedSize": "8207700",
+            "trackType": "7",
+            "storeId": "Tqcwhruwpicicgdmklwabvqhpnq",
+            "albumId": "B4juzw6upsachmokmtumqaxqlbu",
+            "artistId": [
+                "Aelpv6xw456fdtfl3yf3nkdzdwq"
+            ],
+            "nid": "Tqcwhruwpicicgdmklwabvqhpnq",
+            "trackAvailableForSubscription": true,
+            "trackAvailableForPurchase": true,
+            "albumAvailableForPurchase": true,
+            "contentType": "2",
+            "added": true,
+            "votes": -1
+        }
+    ],
+    "playlist": [
+        {
+            "kind": "sj#track",
+            "title": "Runaway (Album Version Explicit) (feat. Pusha T)",
+            "artist": "Kanye West",
+            "composer": "",
+            "album": "My Beautiful Dark Twisted Fantasy",
+            "albumArtist": "Kanye West",
+            "year": 2010,
+            "trackNumber": 9,
+            "genre": "Hip-Hop Hitmakers",
+            "durationMillis": "547000",
+            "albumArtRef": [
+                {
+                    "url": "http://lh3.googleusercontent.com/ki6_nfiySu-l2TjGSC0sqM6uTl3-34wTNp0TDNCI46lIneEzFRta7Xa0dbZka5HTUiwzARRLXN4"
+                }
+            ],
+            "discNumber": 1,
+            "estimatedSize": "21911537",
+            "trackType": "7",
+            "storeId": "Tffp5f7cnerslh7hvanicpbgh6y",
+            "albumId": "Bj7lf3xalq4vlywnwp7z7257a6i",
+            "artistId": [
+                "A3bn3euz42saceyegr7defldcze",
+                "Ayf3izqmc24nrl5m3x73zuvd4li"
+            ],
+            "nid": "Tffp5f7cnerslh7hvanicpbgh6y",
+            "trackAvailableForSubscription": true,
+            "trackAvailableForPurchase": true,
+            "albumAvailableForPurchase": true,
+            "contentType": "1",
+            "primaryVideo": {
+                "kind": "sj#video",
+                "id": "L7_jYl8A73g",
+                "thumbnails": [
+                    {
+                        "url": "https://i.ytimg.com/vi/L7_jYl8A73g/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    }
+                ]
+            },
+            "added": true,
+            "votes": 0,
+            "played": "2016-12-29T20:53:22.646Z"
+        },
+        {
+            "kind": "sj#track",
+            "title": "Runaway (Album Version Explicit) (feat. Pusha T)",
+            "artist": "Kanye West",
+            "composer": "",
+            "album": "My Beautiful Dark Twisted Fantasy",
+            "albumArtist": "Kanye West",
+            "year": 2010,
+            "trackNumber": 9,
+            "genre": "Hip-Hop Hitmakers",
+            "durationMillis": "547000",
+            "albumArtRef": [
+                {
+                    "url": "http://lh3.googleusercontent.com/ki6_nfiySu-l2TjGSC0sqM6uTl3-34wTNp0TDNCI46lIneEzFRta7Xa0dbZka5HTUiwzARRLXN4"
+                }
+            ],
+            "discNumber": 1,
+            "estimatedSize": "21911537",
+            "trackType": "7",
+            "storeId": "Tffp5f7cnerslh7hvanicpbgh6y",
+            "albumId": "Bj7lf3xalq4vlywnwp7z7257a6i",
+            "artistId": [
+                "A3bn3euz42saceyegr7defldcze",
+                "Ayf3izqmc24nrl5m3x73zuvd4li"
+            ],
+            "nid": "Tffp5f7cnerslh7hvanicpbgh6y",
+            "trackAvailableForSubscription": true,
+            "trackAvailableForPurchase": true,
+            "albumAvailableForPurchase": true,
+            "contentType": "1",
+            "primaryVideo": {
+                "kind": "sj#video",
+                "id": "L7_jYl8A73g",
+                "thumbnails": [
+                    {
+                        "url": "https://i.ytimg.com/vi/L7_jYl8A73g/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    }
+                ]
+            },
+            "added": true,
+            "votes": 0,
+            "played": "2016-12-29T20:50:33.658Z"
+        }
+    ],
+    "uservotes": {
+        "vfrbdxmjjgbhfiilr": {
+            "Tqcwhruwpicicgdmklwabvqhpnq": -1,
+            "Tlgqaxz5vq2shkuer6zk4hjixcm": 1,
+            "Tu2pq6oan6w4kxgfdtkoi7qhvce": 1
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<div class="row header">
+  <div class="col-sm-3">
+    <div class="back-link">
+      <a routerLink="/"><i class="fa fa-arrow-left back-link-button"></i></a>
+    </div>
+  </div>
+  <div class="col-sm-6 title">Playlist</div>
+  <div class="col-sm-3">
+    &nbsp;
+  </div>
+</div>
+<div class="playlist">
+  <div class="row" *ngFor="let song of songs">
+    <div class="col-sm-12">
+      <song-item [song]="song" [cached]="true"></song-item>
+    </div>
+  </div>
+  <div *ngIf="!songs || songs.length === 0">
+    no songs played yet!
+  </div>
+</div>

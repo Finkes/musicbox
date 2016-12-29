@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-sm-3">
+    <img *ngIf="song.albumId" class="album-art" src="/covers/{{song.albumId}}.jpg" alt="song">  
+  </div>
+  <div class="col-sm-9 song-meta">
+    <div>{{song.title}}</div>
+    <div>{{song.artist}}</div>
+  </div>
+</div>

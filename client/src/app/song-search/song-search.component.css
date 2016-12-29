@@ -1,0 +1,54 @@
+.header {
+    text-align: center;
+    height: 50px;
+    background-color: #ff5722;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+
+.results {
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.search-text {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    font-size: 22px;
+    padding: 2px;
+}
+
+.show-playlist {
+    float: right;
+    margin-top: 5px;
+}
+
+.show-playlist-button {
+    font-size: 23px;
+    color: white;
+}
+
+.add-button {
+    padding-top: 15px;
+    font-size: 30px;
+}
+
+.back-link {
+    float: left;
+    font-size: 25px;
+    margin-top: 2px;
+}
+
+.back-link-button {
+    color: white;
+}
+
+.active {
+    color: greenyellow;
+}
