@@ -36,8 +36,10 @@ server.listen(port, () => {
     });
 });
 
+
 // save state periodically
+let interval = process.env.interval || 1; // minutes
 setInterval(() => {
     logger.info('saving state');
     state.save();
-}, 1 * 60 * 1000);
+}, interval * 60 * 1000);
