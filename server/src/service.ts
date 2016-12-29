@@ -4,10 +4,11 @@ import * as url from 'url';
 import * as fs from 'fs';
 import { PromiseQueue } from './PromiseQueue';
 import logger from './logger';
-
+import { WorkerQueue, Deferred } from './WorkerQueue';
 
 export class PlaymusicService {
     pm: any;
+    private downloadQueue = new WorkerQueue();
     public init() {
         return new Promise((resolve, reject) => {
             this.pm = new Playmusic();
@@ -117,54 +118,57 @@ export class PlaymusicService {
     }
 
     public downloadTrack(nid: string) {
-        return new Promise((resolve, reject) => {
-            let exists = fs.existsSync(__dirname + `/../songs/${nid}.mp3`);
-            if (exists) {
-                logger.info("song already downloaded (" + nid + ")");
-                resolve();
-                return;
-            }
-            logger.info("downloading (" + nid + ")");
-            this.pm.getStreamUrl(nid, (err: any, streamUrl: any) => {
-                if (err) {
-                    logger.error(err);
+        let downloadJob = () => {
+            return new Promise((resolve, reject) => {
+                let exists = fs.existsSync(__dirname + `/../songs/${nid}.mp3`);
+                if (exists) {
+                    logger.info("song already downloaded (" + nid + ")");
+                    resolve();
                     return;
                 }
+                logger.info("downloading (" + nid + ")");
+                this.pm.getStreamUrl(nid, (err: any, streamUrl: any) => {
+                    if (err) {
+                        logger.error(err);
+                        return;
+                    }
 
-                let urlData = url.parse(streamUrl);
-                let options = {
-                    host: urlData.host,
-                    path: urlData.path
-                };
+                    let urlData = url.parse(streamUrl);
+                    let options = {
+                        host: urlData.host,
+                        path: urlData.path
+                    };
 
-                let callback = (response: any) => {
-                    let data: any = [];
-                    response.on('data', (chunk: any) => {
-                        data.push(chunk);
-                    });
-
-                    response.on('end', () => {
-                        logger.info("download done");
-                        let totalLength = 0;
-                        data.map((buf: any) => {
-                            totalLength += buf.length;
+                    let callback = (response: any) => {
+                        let data: any = [];
+                        response.on('data', (chunk: any) => {
+                            data.push(chunk);
                         });
-                        let fullStream = Buffer.concat(data, totalLength);
 
-                        fs.writeFile(__dirname + `/../songs/${nid}.mp3`, fullStream, () => {
-                            resolve();
+                        response.on('end', () => {
+                            logger.info("download done");
+                            let totalLength = 0;
+                            data.map((buf: any) => {
+                                totalLength += buf.length;
+                            });
+                            let fullStream = Buffer.concat(data, totalLength);
+
+                            fs.writeFile(__dirname + `/../songs/${nid}.mp3`, fullStream, () => {
+                                resolve();
+                            });
                         });
-                    });
-                }
-                let request = http.request(options, callback);
-                request.on('error', error => {
-                    logger.error(error);
-                    reject();
-                })
-                request.end();
+                    }
+                    let request = http.request(options, callback);
+                    request.on('error', error => {
+                        logger.error(error);
+                        reject();
+                    })
+                    request.end();
+                });
             });
-        });
+        }
 
+        return this.downloadQueue.queueJob(downloadJob).promise;
     }
 
     public getAllPlaylistTracks() {
