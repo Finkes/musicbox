@@ -50,6 +50,7 @@ export class Player {
 
     stop() {
         if (this.isPlaying) {
+            this.speaker.close();
             this.stream.unpipe();
             this.decoder.unpipe();
             this.isPlaying = false;
