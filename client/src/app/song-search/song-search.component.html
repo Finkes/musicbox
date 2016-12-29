@@ -9,18 +9,25 @@
   </div>
 </div>
 <div class="results">
-  <div class="row" *ngFor="let song of results">
+  <div *ngIf="!loading">
+    <div class="row" *ngFor="let song of results" [ngClass]="{'disabled': song.added }">
 
-    <div class="col-sm-2 add-button">
-      <i *ngIf="!song.added" (click)="addSong(song)" class="fa fa-plus"></i>
-      <i *ngIf="song.added" class="fa fa-plus active"></i>
+      <div class="col-sm-2 add-button">
+        <i *ngIf="!song.added" (click)="addSong(song)" class="fa fa-plus"></i>
+        <i *ngIf="song.added" class="fa fa-plus active"></i>
+      </div>
+      <div class="col-sm-10">
+        <song-item [song]="song"></song-item>
+      </div>
+
     </div>
-    <div class="col-sm-10">
-      <song-item [song]="song"></song-item>
-    </div>
+
+
+    <div *ngIf="loaded && results.length === 0">no result found for: {{query}}</div>
 
   </div>
-
-  <div *ngIf="loaded && results.length === 0">no result found for: {{query}}</div>
+  <div *ngIf="loading" class="spinner-container">
+    <spinner></spinner>
+  </div>
 
 </div>

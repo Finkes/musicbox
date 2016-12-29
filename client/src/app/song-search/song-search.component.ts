@@ -12,6 +12,7 @@ export class SongSearchComponent implements OnInit {
   results: Song[] = [];
   query: string;
   loaded = false;
+  loading = false;
 
   constructor(private apiService: ApiService) { }
 
@@ -20,7 +21,9 @@ export class SongSearchComponent implements OnInit {
 
   addSong(song: Song) {
     song.added = true;
+    this.loading = true;
     this.apiService.addSong(song).subscribe(res => {
+      this.loading = false;
     });
   }
 

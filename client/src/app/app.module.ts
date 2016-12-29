@@ -11,6 +11,7 @@ import { SongSearchComponent } from './song-search/song-search.component';
 
 import { ApiService } from './api.service';
 import { PlaylistComponent } from './playlist/playlist.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 const appRoutes: Routes = [
   { path: 'search', component: SongSearchComponent },
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
     VotelistComponent,
     SongItemComponent,
     SongSearchComponent,
-    PlaylistComponent
+    PlaylistComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,

@@ -50,5 +50,14 @@
 }
 
 .active {
-    color: greenyellow;
+    color: #ff5722;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.spinner-container {
+    padding-top: 100px;
+    height: 100px;
 }
