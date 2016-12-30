@@ -29,7 +29,11 @@ class State {
                 this.votelist = json.votelist;
                 this.uservotes = json.uservotes;
                 this.playlist = json.playlist;
+                // regenerate votemap from votelist and playlist to prevent duplicate songs
                 this.votelist.map(song => {
+                    this.votemap[song.nid] = song;
+                });
+                this.playlist.map(song => {
                     this.votemap[song.nid] = song;
                 });
                 resolve();

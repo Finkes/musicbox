@@ -6,6 +6,7 @@ import { PromiseQueue } from './PromiseQueue';
 import logger from './logger';
 import { WorkerQueue, Deferred } from './WorkerQueue';
 
+
 export class PlaymusicService {
     pm: any;
     private downloadQueue = new WorkerQueue();

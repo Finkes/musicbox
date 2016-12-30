@@ -71,6 +71,10 @@ export class Controller {
 
     addSong(songModel: any) {
         return new Promise((resolve, reject) => {
+            if(songModel.nid in state.votemap){
+                resolve();
+                return;
+            }
             this.playmusicService.downloadTrack(songModel.nid)
                 .then(() => {
                     songModel.votes = 0;
@@ -123,7 +127,15 @@ export class Controller {
 
     searchSong(query: string) {
         return new Promise((resolve, reject) => {
-            this.playmusicService.searchSongs(query).then(songs => {
+            this.playmusicService.searchSongs(query).then((songs: any[]) => {
+                songs.map((song:any) => {
+                    if (song.nid in state.votemap) {
+                        song.played = true;
+                    }
+                    else {
+                        song.played = false;
+                    }
+                });
                 resolve(songs);
             }).catch(error => {
                 reject(error);

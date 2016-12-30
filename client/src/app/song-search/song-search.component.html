@@ -10,11 +10,11 @@
 </div>
 <div class="results">
   <div *ngIf="!loading">
-    <div class="row" *ngFor="let song of results" [ngClass]="{'disabled': song.added }">
+    <div class="row" *ngFor="let song of results" [ngClass]="{'disabled': song.added || song.played }">
 
       <div class="col-sm-2 add-button">
-        <i *ngIf="!song.added" (click)="addSong(song)" class="fa fa-plus"></i>
-        <i *ngIf="song.added" class="fa fa-plus active"></i>
+        <i *ngIf="!song.added && !song.played" (click)="addSong(song)" class="fa fa-plus"></i>
+        <i *ngIf="song.added || song.played" class="fa fa-plus active"></i>
       </div>
       <div class="col-sm-10">
         <song-item [song]="song"></song-item>
