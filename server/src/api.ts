@@ -32,6 +32,7 @@ export class Api {
 
     getRouter() {
         let router = express.Router();
+        router.get('/save', (req, res) => this.saveState(req, res));
         router.get('/player/next', (req, res) => this.playNextSong(req, res));
         router.get('/search', (req, res) => this.searchSong(req, res));
         router.get('/playlist', (req, res) => this.success(res, state.playlist));
@@ -40,6 +41,12 @@ export class Api {
         router.put('/users/:user/votes/:nid', (req, res) => this.vote(req, res));
         router.get('/users/:user/votes', (req, res) => this.getVotesOfUser(req, res));
         return router;
+    }
+
+    saveState(req: express.Request, res: express.Response) {
+        state.save().then(() => {
+            this.success(res);
+        });
     }
 
     playNextSong(req: express.Request, res: express.Response) {
