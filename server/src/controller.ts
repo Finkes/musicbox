@@ -71,12 +71,12 @@ export class Controller {
 
     addSong(songModel: any) {
         return new Promise((resolve, reject) => {
-            songModel.votes = 0;
-            state.votelist.push(songModel);
-            this.sortVoteList();
-            state.votemap[songModel.nid] = songModel;
             this.playmusicService.downloadTrack(songModel.nid)
                 .then(() => {
+                    songModel.votes = 0;
+                    state.votelist.push(songModel);
+                    this.sortVoteList();
+                    state.votemap[songModel.nid] = songModel;
                     this.checkPlayer();
                     resolve();
                 }).catch(error => {
@@ -100,7 +100,7 @@ export class Controller {
     }
 
     handleRestart() {
-        if(state.playlist.length === 0){
+        if (state.playlist.length === 0) {
             return;
         }
         let lastSong = state.playlist[0];
