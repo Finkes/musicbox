@@ -85,6 +85,19 @@ export class Controller {
         });
     }
 
+    playNextSong() {
+        return new Promise((resolve, reject) => {
+            if (state.votelist.length === 0) {
+                resolve();
+                return;
+            }
+            this.player.stop().then(() => {
+                this.checkPlayer();
+                resolve();
+            });
+        });
+    }
+
     checkPlayer() {
         if (!this.player.isPlaying) {
             if (state.votelist.length === 0) {

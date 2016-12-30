@@ -11,14 +11,15 @@ export class Player {
     isPlaying = false;
     isPaused = false;
     onEndCallback: Function;
+    private manualStop = false;
 
     constructor() {
 
     }
 
-    play(filepath: string) {
+    play(filepath: string): boolean {
         if (this.isPlaying) {
-            this.stop();
+            return false;
         }
         this.isPlaying = true;
         this.isPaused = false;
@@ -29,7 +30,11 @@ export class Player {
             logger.error(error);
         });
         this.speaker.on('close', () => {
-            logger.info("speaker close");
+            if(this.manualStop){
+                this.manualStop = false;
+                return;
+            }
+            logger.info("song ended / speaker close");
             this.stream.unpipe();
             this.decoder.unpipe();
             this.isPlaying = false;
@@ -40,6 +45,7 @@ export class Player {
         this.decoder.on("end", () => {
             logger.info("decoder end");
         });
+        return true;
     }
 
     pause() {
@@ -57,10 +63,20 @@ export class Player {
     }
 
     stop() {
-        this.stream.unpipe();
-        this.decoder.unpipe();
-        this.speaker.close();
-        this.isPlaying = false;
+        this.manualStop = true;
+        return new Promise((resolve, reject) => {
+            if (!this.isPlaying) {
+                resolve();
+                return;
+            }
+            this.speaker.on('close', () => {
+                this.isPlaying = false;
+                resolve();
+            });
+            this.stream.unpipe();
+            this.decoder.unpipe();
+            this.speaker.close();
+        });
     }
 
     onEnd(callback: Function) {
