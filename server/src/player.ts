@@ -1,6 +1,7 @@
 let lame = require('lame');
 let Speaker = require('speaker');
 import * as fs from 'fs';
+import logger from './logger';
 
 export class Player {
 
@@ -11,27 +12,34 @@ export class Player {
     isPaused = false;
     onEndCallback: Function;
 
-    constructor() { }
+    constructor() {
+
+    }
 
     play(filepath: string) {
-        this.stop();
+        if (this.isPlaying) {
+            this.stop();
+        }
         this.isPlaying = true;
         this.isPaused = false;
-        this.decoder = new lame.Decoder();
-        this.decoder.on('format', (format: any) => {
-            this.speaker = this.decoder.pipe(new Speaker(format));
-            this.speaker.on('error', (error:any) => {
-                console.log(error);
-            });
-            this.decoder.on("end", () => {
-                this.stop();
-                if(this.onEndCallback){
-                    this.onEndCallback();
-                }
-            });
-        });
         this.stream = fs.createReadStream(filepath);
-        this.stream.pipe(this.decoder);
+        this.decoder = this.stream.pipe(new lame.Decoder());
+        this.speaker = this.decoder.pipe(new Speaker());
+        this.speaker.on('error', (error: any) => {
+            logger.error(error);
+        });
+        this.speaker.on('close', () => {
+            logger.info("speaker close");
+            this.stream.unpipe();
+            this.decoder.unpipe();
+            this.isPlaying = false;
+            if (this.onEndCallback) {
+                this.onEndCallback();
+            }
+        });
+        this.decoder.on("end", () => {
+            logger.info("decoder end");
+        });
     }
 
     pause() {
@@ -49,15 +57,14 @@ export class Player {
     }
 
     stop() {
-        if (this.isPlaying) {
-            this.stream.unpipe();
-            this.decoder.unpipe();
-            this.speaker.close();
-            this.isPlaying = false;
-        }
+        this.stream.unpipe();
+        this.decoder.unpipe();
+        this.speaker.close();
+        this.isPlaying = false;
     }
 
     onEnd(callback: Function) {
         this.onEndCallback = callback;
     }
 }
+
